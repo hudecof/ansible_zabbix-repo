@@ -3,9 +3,10 @@
 - name: "debian | install package"
   apt: deb={{ remote_package }} state=present
   register: apt_result
-
-- debug: var=apt_result
-
+  tags:
+    - zabbix-repo 
 - name: "debian | update repository"
   apt: update_cache=yes
   when: apt_result.changed
+  tags:
+    - zabbix-repo 

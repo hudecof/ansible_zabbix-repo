@@ -9,23 +9,23 @@
    - "os-{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
    - "os-{{ ansible_distribution }}.yml"
    - "os-default.yml"
+  tags:
+    - zabbix-repo 
 
 # Debian  specific tasks
-- include: common.yml
+- include: repo-common.yml
   when: zabbix_repo_enabled
+  tags:
+    - zabbix-repo 
 
 # Debian  specific tasks
-- include: os-debian.yml
-  when: ansible_distribution == 'Debian' and zabbix_repo_enabled
-
-# Ubuntu  specific tasks
-- include: os-debian.yml
-  when: ansible_distribution == 'Ubuntu' and zabbix_repo_enabled
+- include: repo-Debian.yml
+  when: ansible_distribution in ('Debian', 'Ubuntu') and zabbix_repo_enabled
+  tags:
+    - zabbix-repo 
 
 # CentOS  specific tasks
-- include: os-centos.yml
-  when: ansible_distribution == 'CentOS' and zabbix_repo_enabled
-
-# RedHat  specific tasks
-- include: os-centos.yml
-  when: ansible_distribution == 'RedHat' and zabbix_repo_enabled
+- include: repo-CentOS.yml
+  when: ansible_distribution in ('CentOS', 'RedHat') and zabbix_repo_enabled
+  tags:
+    - zabbix-repo 
