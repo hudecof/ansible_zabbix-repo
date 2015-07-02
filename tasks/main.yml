@@ -1,0 +1,31 @@
+---
+# tasks file for zabbix-repo
+
+- name: "common | set os specific variables"
+  include_vars: "{{ item }}"
+  with_first_found:
+   - "os-{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml"
+   - "os-{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
+   - "os-{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
+   - "os-{{ ansible_distribution }}.yml"
+   - "os-default.yml"
+
+# Debian  specific tasks
+- include: common.yml
+  when: zabbix_repo_enabled
+
+# Debian  specific tasks
+- include: os-debian.yml
+  when: ansible_distribution == 'Debian' and zabbix_repo_enabled
+
+# Ubuntu  specific tasks
+- include: os-debian.yml
+  when: ansible_distribution == 'Ubuntu' and zabbix_repo_enabled
+
+# CentOS  specific tasks
+- include: os-centos.yml
+  when: ansible_distribution == 'CentOS' and zabbix_repo_enabled
+
+# RedHat  specific tasks
+- include: os-centos.yml
+  when: ansible_distribution == 'RedHat' and zabbix_repo_enabled

@@ -1,0 +1,8 @@
+---
+
+zabbix_repo_vars: default
+zabbix_repo_enabled: false
+zabbix_repo_package: zabbix-release
+
+zabbix_repo_releases:
+  "X": placeholder

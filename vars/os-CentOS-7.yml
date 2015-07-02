@@ -1,0 +1,9 @@
+---
+
+zabbix_repo_vars: CentOS-7
+zabbix_repo_enabled: true
+zabbix_repo_package: zabbix-release
+
+zabbix_repo_releases:
+  "2.2": zabbix-release-2.2-1.el7.noarch.rpm
+  "2.4": zabbix-release-2.4-1.el7.noarch.rpm

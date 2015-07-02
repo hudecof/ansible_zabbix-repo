@@ -1,0 +1,13 @@
+---
+# defaults file for zabbix-repo
+
+zabbix_repo_recommend:
+  "Debian-6": "2.2"
+  "Debian-7": "2.4"
+  "Ubuntu-10.04": "2.0"
+  "Ubuntu-12.04": "2.2"
+  "Ubuntu-14.04": "2.4"
+  "CentOS-5": "2.4"
+  "CentOS-6": "2.4"
+  "CentOS-7": "2.4"
+  "default": "X"

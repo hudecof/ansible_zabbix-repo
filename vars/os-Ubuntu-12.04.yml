@@ -1,0 +1,9 @@
+---
+
+zabbix_repo_vars: Ubuntu-12.04
+zabbix_repo_enabled: true
+zabbix_repo_package: zabbix-release
+
+zabbix_repo_releases:
+  "2.0": zabbix-release_2.0-1precise_all.deb
+  "2.2": zabbix-release_2.2-1+precise_all.deb

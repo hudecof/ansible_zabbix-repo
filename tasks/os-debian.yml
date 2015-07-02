@@ -1,0 +1,11 @@
+---
+
+- name: "debian | install package"
+  apt: deb={{ remote_package }} state=present
+  register: apt_result
+
+- debug: var=apt_result
+
+- name: "debian | update repository"
+  apt: update_cache=yes
+  when: apt_result.changed
