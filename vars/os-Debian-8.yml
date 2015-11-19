@@ -1,0 +1,8 @@
+---
+
+zabbix_repo_vars: Debian-8
+zabbix_repo_enabled: true
+zabbix_repo_package: zabbix-release
+
+zabbix_repo_releases:
+  "2.4": zabbix-release_2.4-1+jessie_all.deb
