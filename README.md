@@ -23,7 +23,7 @@ Installation of the official zabbix repozitories from http://repo.zabbix.com
 Requirements
 ------------
 
-None
+[sudo] ansible-galaxy install Burnfaker.zabbix-repo
 
 Role Variables
 --------------
@@ -44,7 +44,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - hudecof.zabbix-repo
+         - Burnfaker.zabbix-repo
 		 
 License
 -------
