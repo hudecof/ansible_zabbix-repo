@@ -1,6 +1,6 @@
 zabbix-repo
 =========
-
+[11.06.2016] - Added Zabbix 3.0 Support
 Installation of the official zabbix repozitories from http://repo.zabbix.com
 
 Requirements
