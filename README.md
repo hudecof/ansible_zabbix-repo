@@ -7,7 +7,7 @@ EL 5-7
 Debian 6-8
 --
 Ubundu 10.x - 14.x
--------------------
+--
 
 Supported Versions:
 --
