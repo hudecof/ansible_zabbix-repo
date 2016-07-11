@@ -1,4 +1,13 @@
-zabbix-repo
+zabbix-repo for Ansible
+
+Supported dists:
+EL 5-7
+Debian 6-8
+Ubundu 10.x - 14.x
+Supported Versions:
+2.0 - 3.0
+
+
 =========
 [11.06.2016] - Added Zabbix 3.0 Support
 
