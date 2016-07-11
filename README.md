@@ -3,11 +3,12 @@ zabbix-repo for Ansible Based on hudecof/ansible_zabbix-repo
 Supported dists:
 --
 EL 5-7
---
+
 Debian 6-8
---
+
 Ubundu 10.x - 14.x
---
+
+
 
 Supported Versions:
 --
