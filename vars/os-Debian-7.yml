@@ -8,3 +8,4 @@ zabbix_repo_releases:
   "2.0": zabbix-release_2.0-1wheezy_all.deb
   "2.2": zabbix-release_2.2-1+wheezy_all.deb
   "2.4": zabbix-release_2.4-1+wheezy_all.deb 
+  "3.0": zabbix-release_3.0-1+wheezy_all.deb

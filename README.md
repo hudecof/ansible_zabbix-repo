@@ -1,12 +1,29 @@
-zabbix-repo
+zabbix-repo for Ansible Based on hudecof/ansible_zabbix-repo
+
+Supported dists:
+--
+EL 5-7
+
+Debian 6-8
+
+Ubundu 10.x - 14.x
+
+
+
+Supported Versions:
+--
+2.0 - 3.0
+
+
 =========
+[11.06.2016] - Added Zabbix 3.0 Support
 
 Installation of the official zabbix repozitories from http://repo.zabbix.com
 
 Requirements
 ------------
 
-None
+[sudo] ansible-galaxy install Burnfaker.zabbix-repo
 
 Role Variables
 --------------
@@ -27,7 +44,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - hudecof.zabbix-repo
+         - Burnfaker.zabbix-repo
 		 
 License
 -------

@@ -3,12 +3,12 @@
 
 zabbix_repo_recommend:
   "Debian-6": "2.2"
-  "Debian-7": "2.4"
-  "Debian-8": "2.4"
+  "Debian-7": "3.0"
+  "Debian-8": "3.0"
   "Ubuntu-10.04": "2.0"
   "Ubuntu-12.04": "2.2"
-  "Ubuntu-14.04": "2.4"
-  "CentOS-5": "2.4"
-  "CentOS-6": "2.4"
-  "CentOS-7": "2.4"
+  "Ubuntu-14.04": "3.0"
+  "CentOS-5": "3.0"
+  "CentOS-6": "3.0"
+  "CentOS-7": "3.0"
   "default": "X"
