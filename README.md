@@ -1,4 +1,4 @@
-zabbix-repo for Ansible
+zabbix-repo for Ansible Based on hudecof/ansible_zabbix-repo
 
 Supported dists:
 EL 5-7
