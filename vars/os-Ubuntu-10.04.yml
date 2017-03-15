@@ -1,9 +1,0 @@
----
-
-zabbix_repo_vars: Ubuntu-10.04
-zabbix_repo_enabled: true
-zabbix_repo_package: zabbix-release
-
-zabbix_repo_releases:
-  "2.0": zabbix-release_2.0-1lucid_all.deb
-

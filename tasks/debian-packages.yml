@@ -1,0 +1,19 @@
+---
+- name: "debian | copy package"
+  copy:
+    src: "{{ zabbix_repo_cache_dir }}/{{ zabbix_repo_package_name }}"
+    dest: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_package_name }}"
+    owner: root
+    group: root
+    mode: 0644
+
+- name: "debian | install package"
+  apt:
+    deb: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_package_name }}"
+  register: install
+
+- name: "debian | update package cache"
+  apt:
+    update_cache: yes
+    cache_valid_time: 0
+  when: install|changed

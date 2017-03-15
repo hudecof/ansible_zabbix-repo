@@ -1,10 +1,17 @@
 ---
 
-zabbix_repo_vars: Ubuntu-14.04
-zabbix_repo_enabled: true
-zabbix_repo_package: zabbix-release
+zabbix_repo_os: Ubuntu-14.04
 
-zabbix_repo_releases:
-  "2.2": zabbix-release_2.2-1+trusty_all.deb
-  "2.4": zabbix-release_2.4-1+trusty_all.deb
-  "3.0": zabbix-release_3.0-1+trusty_all.deb
+zabbix_repo_tasks:
+  - common-download.yml
+  - debian-packages.yml
+
+zabbix_repo_packages:
+  "2.2": http://repo.zabbix.com/zabbix/2.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_2.2-1+trusty_all.deb
+  "2.4": http://repo.zabbix.com/zabbix/2.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_2.4-1+trusty_all.deb
+  "3.0": http://repo.zabbix.com/zabbix/3.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_3.0-1+trusty_all.deb
+  "3.2": http://repo.zabbix.com/zabbix/3.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_3.2-1+trusty_all.deb
+
+
+zabbix_repo_recommend: "3.0"
+zabbix_repo_releases: ["2.2", "2.4", "3.0", "3.2"]

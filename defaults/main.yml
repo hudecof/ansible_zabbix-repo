@@ -1,14 +1,6 @@
 ---
 # defaults file for zabbix-repo
 
-zabbix_repo_recommend:
-  "Debian-6": "2.2"
-  "Debian-7": "3.0"
-  "Debian-8": "3.0"
-  "Ubuntu-10.04": "2.0"
-  "Ubuntu-12.04": "2.2"
-  "Ubuntu-14.04": "3.0"
-  "CentOS-5": "3.0"
-  "CentOS-6": "3.0"
-  "CentOS-7": "3.0"
-  "default": "X"
+zabbix_repo_version: null
+zabbix_repo_tmp_dir: /tmp
+zabbix_repo_cache_dir: /tmp

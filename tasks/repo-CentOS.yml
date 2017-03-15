@@ -1,6 +1,0 @@
----
-
-- name: "centos | install package"
-  yum: name={{ remote_package }} state=present
-  tags:
-    - zabbix-repo 

@@ -10,22 +10,13 @@
    - "os-{{ ansible_distribution }}.yml"
    - "os-default.yml"
   tags:
-    - zabbix-repo 
+    - zabbix-repo
 
-# Debian  specific tasks
-- include: repo-common.yml
-  when: zabbix_repo_enabled
-  tags:
-    - zabbix-repo 
 
-# Debian  specific tasks
-- include: repo-Debian.yml
-  when: ansible_distribution in ('Debian', 'Ubuntu') and zabbix_repo_enabled
+- name: "run os specific tasks"
+  include: "{{ task_item }}"
+  with_items: "{{ zabbix_repo_tasks }}"
+  loop_control:
+    loop_var: task_item
   tags:
-    - zabbix-repo 
-
-# CentOS  specific tasks
-- include: repo-CentOS.yml
-  when: ansible_distribution in ('CentOS', 'RedHat') and zabbix_repo_enabled
-  tags:
-    - zabbix-repo 
+    - zabbix-repo

@@ -1,10 +1,10 @@
 ---
 galaxy_info:
   author: Peter Hudec
-  description: installing official zabbix repo 
+  description: installing official zabbix repo
   company: CNC, a.s.
   license: BSD
-  min_ansible_version: 1.6
+  min_ansible_version: 2.1
   platforms:
   - name: EL
     versions:
@@ -13,9 +13,9 @@ galaxy_info:
     - 7
   - name: Ubuntu
     versions:
-    - lucid
     - precise
     - trusty
+    - xenial
   - name: Debian
     versions:
     - squeeze
@@ -24,4 +24,3 @@ galaxy_info:
   categories:
   - packaging
 dependencies: []
-  
