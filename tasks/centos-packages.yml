@@ -6,8 +6,14 @@
     owner: root
     group: root
     mode: 0644
+  tags:
+    - zabbix-repo
+    - zabbix-repo:packages
 
 - name: "centos | install package"
   yum:
     name: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_package_name }}"
     state: present
+  tags:
+    - zabbix-repo
+    - zabbix-repo:packages
