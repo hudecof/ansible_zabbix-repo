@@ -7,8 +7,7 @@ zabbix_repo_tasks:
   - debian-packages.yml
 
 zabbix_repo_packages:
-  "2.2": "http://repo.zabbix.com/zabbix/2.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_2.2-1+precise_all.deb
-"
+  "2.2": http://repo.zabbix.com/zabbix/2.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_2.2-1+precise_all.deb
 
 zabbix_repo_recommend: "2.2"
 zabbix_repo_releases: ["2.2"]
