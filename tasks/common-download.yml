@@ -13,7 +13,7 @@
 - name: "common | vesrion "
   debug:
     msg: "{{ zabbix_repo_version }} will be installed"
-    
+
 - name: "common | set package name"
   set_fact:
     zabbix_repo_package_name: "{{zabbix_repo_packages[zabbix_repo_version]|basename}}"
