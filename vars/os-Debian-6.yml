@@ -1,9 +1,13 @@
 ---
 
-zabbix_repo_vars: Debian-6
-zabbix_repo_enabled: true
-zabbix_repo_package: zabbix-release
+zabbix_repo_os: Debian-6
 
-zabbix_repo_releases:
-  "2.0": zabbix-release_2.0-1squeeze_all.deb
-  "2.2": zabbix-release_2.2-1+squeeze_all.deb
+zabbix_repo_tasks:
+  - common-download.yml
+  - debian-packages.yml
+
+zabbix_repo_packages:
+  "2.2": http://repo.zabbix.com/zabbix/2.2/debian/pool/main/z/zabbix-release/zabbix-release_2.2-1+squeeze_all.deb
+zabbix_repo_recommend: "2.2"
+
+zabbix_repo_releases: ["2.2"]

@@ -1,0 +1,25 @@
+---
+
+- name: "common | set version"
+  set_fact:
+    zabbix_repo_version: "{{ zabbix_repo_recommend }}"
+  when: zabbix_repo_version is none
+
+- name: "common | check the version"
+  fail:
+    msg: version {{ zabbix_repo_version }} is not supported for {{ ansible_distribution }} {{ansible_distribution_version}}
+  when: zabbix_repo_version not in zabbix_repo_releases
+
+- name: "common | vesrion "
+  debug:
+    msg: "{{ zabbix_repo_version }} will be installed"
+    
+- name: "common | set package name"
+  set_fact:
+    zabbix_repo_package_name: "{{zabbix_repo_packages[zabbix_repo_version]|basename}}"
+#    zabbix_repo_package_name: "zabbix-release_{{ zabbix_repo_os }}_{{ zabbix_repo_recommend }}"
+
+- name: "common | download package"
+  local_action:
+    get_url url="{{zabbix_repo_packages[zabbix_repo_version]}}" dest="{{ zabbix_repo_cache_dir }}/{{ zabbix_repo_package_name }}"
+  become: no

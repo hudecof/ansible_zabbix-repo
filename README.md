@@ -1,36 +1,27 @@
-zabbix-repo for Ansible Based on hudecof/ansible_zabbix-repo
+# zabbix-repo
 
-Supported dists:
---
-EL 5-7
+This roles manages official zabbix repositoris fromt he **repo.zabbix.com**
 
-Debian 6-8
+To offload the traffic, the role is caching the downloaded packages in the `zabbix_repo_cache_dir ` directory. The workflow is
 
-Ubundu 10.x - 14.x
+- download the package fromthe **repo.zabbix.com** if not already done
+- copy the package to the remote hosts
+- install the package
 
+## Requirements
 
+- ansible: 2.1
 
-Supported Versions:
---
-2.0 - 3.0
-
-
-=========
-[11.06.2016] - Added Zabbix 3.0 Support
-
-Installation of the official zabbix repozitories from http://repo.zabbix.com
-
-Requirements
-------------
-
-[sudo] ansible-galaxy install Burnfaker.zabbix-repo
 
 Role Variables
 --------------
 
-`zabbix_repo_recommend` is the list of the recommened version of the zabbix-repo package for each supported distribution. Feel free to ovveride it.
+`zabbix_repo_recommend` the version odf packahge to be installed. default value is `null`, which means the latest **LTS** version will be installed.
 
-If for some reason you need to have diffent version installed on some **host** or **host_group** set `zabbix_repo_version`,
+`zabbix_repo_tmp_dir` is the directory, where the **zabbx-repo** package will be saved. defaults to **/tmp**.
+
+`zabbix_repo_cache_dir` is the directory, where the role will cache the **zabbix-repo** package on local server, defaults to **/tmp**. I use **{{playbook_dir}}/files/zabbix/packages**.
+
 
 Dependencies
 ------------
@@ -40,12 +31,10 @@ None
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
+    - hosts: all
       roles:
          - hudecof.zabbix-repo
-		 
+
 License
 -------
 
@@ -56,3 +45,4 @@ Author Information
 
 Peter Hudec
 CNC, a.s.
+Slovakia
