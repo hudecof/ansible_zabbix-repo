@@ -1,4 +1,4 @@
 ---
 
 zabbix_repo_tasks:
-  - unsuported
+  - unsuported.yml
