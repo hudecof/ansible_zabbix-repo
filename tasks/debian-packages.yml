@@ -13,6 +13,7 @@
 - name: "debian | install package"
   apt:
     deb: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_package_name }}"
+    dpkg_options: 'force-confnew,force-confdef'
   register: install
 
 - name: "debian | update package cache"
