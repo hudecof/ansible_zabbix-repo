@@ -9,6 +9,4 @@ before_script:
 
 test:
   script:
-    - cd ../ && rm -rf hudecof.zabbix-repo && mv role-zabbix-repo hudecof.zabbix-repo && cd hudecof.zabbix-repo
     - molecule test
-    - cd ../ && mv  hudecof.zabbix-repo role-zabbix-repo && cd role-zabbix-repo

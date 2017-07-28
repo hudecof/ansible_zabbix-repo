@@ -18,7 +18,7 @@ To offload the traffic, the role is caching the downloaded packages in the `zabb
 
 ## Role Variables
 
-`zabbix_repo_recommend` the version of packahge to be installed. default value is `null`, which means the latest **LTS** version will be installed.
+`zabbix_repo_recommend` the version of package to be installed. default value is `null`, which means the latest version will be installed.
 
 `zabbix_repo_tmp_dir` is the directory, where the **zabbx-repo** package will be saved. defaults to **/tmp**.
 

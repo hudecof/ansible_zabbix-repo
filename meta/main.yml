@@ -23,4 +23,4 @@ galaxy_info:
     - jessie
   categories:
   - packaging
-dependencies: []
+  dependencies: []

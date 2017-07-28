@@ -9,5 +9,5 @@ zabbix_repo_packages:
   "3.0": http://repo.zabbix.com/zabbix/3.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_3.0-1+xenial_all.deb
   "3.2": http://repo.zabbix.com/zabbix/3.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_3.2-1+xenial_all.deb
 
-zabbix_repo_recommend: "3.0"
+zabbix_repo_recommend: "3.2"
 zabbix_repo_releases: ["3.0", "3.2"]

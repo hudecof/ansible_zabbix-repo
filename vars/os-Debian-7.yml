@@ -12,6 +12,6 @@ zabbix_repo_packages:
   "2.4": http://repo.zabbix.com/zabbix/2.4/debian/pool/main/z/zabbix-release/zabbix-release_2.4-1+wheezy_all.deb
   "2.2": http://repo.zabbix.com/zabbix/2.2/debian/pool/main/z/zabbix-release/zabbix-release_2.2-1+wheezy_all.deb
 
-zabbix_repo_recommend: "3.0"
+zabbix_repo_recommend: "3.2"
 
 zabbix_repo_releases: ["2.2", "2.4", "3.0", "3.2"]
