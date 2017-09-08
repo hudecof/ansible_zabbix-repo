@@ -21,6 +21,7 @@ galaxy_info:
     - squeeze
     - wheezy
     - jessie
+    - stretch
   categories:
   - packaging
   dependencies: []
