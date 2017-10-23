@@ -1,6 +1,5 @@
 ---
-- hosts: all
-  strategy: free
-  serial: 1
+- name: Converge
+  hosts: all
   roles:
     - role: hudecof.zabbix-repo

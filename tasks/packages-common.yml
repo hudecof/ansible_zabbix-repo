@@ -1,0 +1,8 @@
+---
+- name: "common | copy package"
+  copy:
+    src: "{{ zabbix_repo_cache_dir }}/{{ zabbix_repo_package_name }}"
+    dest: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_package_name }}"
+    owner: root
+    group: root
+    mode: 0644

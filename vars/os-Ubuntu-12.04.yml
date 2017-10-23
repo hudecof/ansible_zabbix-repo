@@ -2,10 +2,6 @@
 
 zabbix_repo_os: Ubuntu-12.04
 
-zabbix_repo_tasks:
-  - common-download.yml
-  - debian-packages.yml
-
 zabbix_repo_packages:
   "2.2": http://repo.zabbix.com/zabbix/2.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_2.2-1+precise_all.deb
 

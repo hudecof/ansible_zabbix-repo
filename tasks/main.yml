@@ -4,19 +4,41 @@
 - name: "common | set os specific variables"
   include_vars: "{{ item }}"
   with_first_found:
-   - "os-{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml"
-   - "os-{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
-   - "os-{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
-   - "os-{{ ansible_distribution }}.yml"
-   - "os-default.yml"
+    - "os-{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml"
+    - "os-{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
+    - "os-{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
+    - "os-{{ ansible_distribution }}.yml"
+    - "os-default.yml"
   tags:
     - zabbix-repo
+    - zabbix-repo:version
+    - zabbix-repo:download
+    - zabbix-repo:packages
 
-
-- name: "run os specific tasks"
-  include: "{{ task_item }}"
-  with_items: "{{ zabbix_repo_tasks }}"
-  loop_control:
-    loop_var: task_item
+- name: include version set tasks
+  include: common-version.yml
   tags:
     - zabbix-repo
+    - zabbix-repo:version
+    - zabbix-repo:download
+    - zabbix-repo:packages
+
+- name: include download package tasks
+  include: common-download.yml
+  tags:
+    - zabbix-repo
+    - zabbix-repo:version
+    - zabbix-repo:download
+
+
+- name: include packages common tasks
+  include: packages-common.yml
+  tags:
+    - zabbix-repo
+    - zabbix-repo:packages
+
+- name: include packages os tasks
+  include: packages-{{ ansible_os_family }}.yml
+  tags:
+    - zabbix-repo
+    - zabbix-repo:packages
