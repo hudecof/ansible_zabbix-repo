@@ -1,13 +1,11 @@
 ---
 
-zabbix_repo_os: Debian-8
-
-zabbix_repo_packages:
+__zabbix_repo_packages:
   "3.4": http://repo.zabbix.com/zabbix/3.4/debian/pool/main/z/zabbix-release/zabbix-release_3.4-1+jessie_all.deb
   "3.2": http://repo.zabbix.com/zabbix/3.2/debian/pool/main/z/zabbix-release/zabbix-release_3.2-1+jessie_all.deb
   "3.0": http://repo.zabbix.com/zabbix/3.0/debian/pool/main/z/zabbix-release/zabbix-release_3.0-1+jessie_all.deb
   "2.4": http://repo.zabbix.com/zabbix/2.4/debian/pool/main/z/zabbix-release/zabbix-release_2.4-1+jessie_all.deb
 
-zabbix_repo_recommend: "3.4"
+__zabbix_repo_version: "3.4"
 
-zabbix_repo_releases: ["2.4", "3.0", "3.2", "3.4"]
+__zabbix_repo_releases: ["2.4", "3.0", "3.2", "3.4"]

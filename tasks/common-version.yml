@@ -1,10 +1,5 @@
 ---
 
-- name: "common | set version"
-  set_fact:
-    zabbix_repo_version: "{{ zabbix_repo_recommend }}"
-  when: zabbix_repo_version is none
-
 - name: "common | check the version"
   fail:
     msg: version {{ zabbix_repo_version }} is not supported for {{ ansible_distribution }} {{ansible_distribution_version}}

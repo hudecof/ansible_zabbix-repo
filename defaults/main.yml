@@ -1,6 +1,9 @@
 ---
 # defaults file for zabbix-repo
 
-zabbix_repo_version: null
+zabbix_repo_version: "{{ __zabbix_repo_version }}"
+zabbix_repo_releases: "{{ __zabbix_repo_releases }}"
+zabbix_repo_packages: "{{ __zabbix_repo_packages }}"
+
 zabbix_repo_tmp_dir: /tmp
 zabbix_repo_cache_dir: /tmp
