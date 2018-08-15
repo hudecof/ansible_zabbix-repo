@@ -1,8 +1,8 @@
 ---
 galaxy_info:
+  role_name: zabbix-repo
   author: Peter Hudec
   description: installing official zabbix repo
-  company: CNC, a.s.
   license: BSD
   min_ansible_version: 2.1
   platforms:
@@ -16,12 +16,14 @@ galaxy_info:
     - precise
     - trusty
     - xenial
+    - bionic
   - name: Debian
     versions:
     - squeeze
     - wheezy
     - jessie
     - stretch
-  categories:
+  galaxy_tags:
   - packaging
+  - zabbix
   dependencies: []
