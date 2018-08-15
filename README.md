@@ -1,6 +1,5 @@
 # zabbix-repo
 
-- CNC: [![build status](https://source.cnc.sk/ansible/role-zabbix-repo/badges/master/build.svg)](https://source.cnc.sk/ansible/role-zabbix-repo/commits/master)
 - GitHub: [![Build Status](https://travis-ci.org/hudecof/ansible_zabbix-repo.svg?branch=master)](https://travis-ci.org/hudecof/ansible_zabbix-repo)
 
 This roles manages official zabbix repositoris fromt he **repo.zabbix.com**
@@ -42,5 +41,3 @@ BSD
 ## Author Information
 
 Peter Hudec
-CNC, a.s.
-Slovakia
