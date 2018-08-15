@@ -1,6 +1,6 @@
 ---
 __zabbix_repo_packages:
-  "2.2": http://repo.zabbix.com/zabbix/2.2/debian/pool/main/z/zabbix-release/zabbix-release_2.2-1+squeeze_all.deb
+  "2.2": http://repo.zabbix.com/zabbix/2.2/debian/pool/main/z/zabbix-release/zabbix-release_2.2-2+squeeze_all.deb
 
 __zabbix_repo_version: "2.2"
 
