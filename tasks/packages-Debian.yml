@@ -9,4 +9,4 @@
   apt:
     update_cache: yes
     cache_valid_time: 0
-  when: install|changed
+  when: install is changed
