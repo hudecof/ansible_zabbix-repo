@@ -24,9 +24,11 @@ galaxy_info:
     - jessie
     - stretch
   - name: SLES
+    versions:
     - 12
     - 15
   - name: opensuse
+    versions:
     - 12
     - 15
   galaxy_tags:
