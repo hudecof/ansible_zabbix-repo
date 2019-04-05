@@ -10,4 +10,3 @@
     dest: "{{ zabbix_repo_cache_dir }}/{{ zabbix_repo_package_name }}"
   delegate_to: localhost
   become: no
-  run_once: true
