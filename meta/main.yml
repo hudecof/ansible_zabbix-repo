@@ -23,6 +23,12 @@ galaxy_info:
     - wheezy
     - jessie
     - stretch
+  - name: SLES
+    - 12
+    - 15
+  - name: opensuse
+    - 12
+    - 15
   galaxy_tags:
   - packaging
   - zabbix
