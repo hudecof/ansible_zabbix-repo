@@ -5,9 +5,9 @@ __zabbix_repo_packages:
   "3.0": http://repo.zabbix.com/zabbix/3.0/rhel/5/x86_64/zabbix-release-3.0-1.el5.noarch.rpm
   "3.2": http://repo.zabbix.com/zabbix/3.2/rhel/5/x86_64/zabbix-release-3.2-1.el5.noarch.rpm
   "3.4": http://repo.zabbix.com/zabbix/3.4/rhel/5/x86_64/zabbix-release-3.4-1.noarch.rpm
-  "4.1": http://repo.zabbix.com/zabbix/4.1/rhel/5/x86_64/zabbix-release-4.1-1.el5.noarch.rpm
+  "4.0": http://repo.zabbix.com/zabbix/4.0/rhel/5/x86_64/zabbix-release-4.0-1.el5.noarch.rpm
   "4.2": https://repo.zabbix.com/zabbix/4.2/rhel/5/x86_64/zabbix-release-4.2-1.el5.noarch.rpm
 
 __zabbix_repo_version: "4.2"
 
-__zabbix_repo_releases: ["2.2", "2.4", "3.0", "3.2", "3.4", "4.1", "4.2"]
+__zabbix_repo_releases: ["2.2", "2.4", "3.0", "3.2", "3.4", "4.0", "4.2"]
