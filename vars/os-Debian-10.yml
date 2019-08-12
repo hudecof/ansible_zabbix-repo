@@ -6,4 +6,4 @@ __zabbix_repo_packages:
 
 __zabbix_repo_version: "4.2"
 
-__zabbix_repo_releases: [""4.0", "4.2"]
+__zabbix_repo_releases: ["4.0", "4.2"]
