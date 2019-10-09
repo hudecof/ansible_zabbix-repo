@@ -3,7 +3,8 @@
 __zabbix_repo_packages:
   "4.0": "http://repo.zabbix.com/zabbix/4.0/debian/pool/main/z/zabbix-release/zabbix-release_4.0-2%2Bbuster_all.deb"
   "4.2": "http://repo.zabbix.com/zabbix/4.2/debian/pool/main/z/zabbix-release/zabbix-release_4.2-2%2Bbuster_all.deb"
+  "4.4": "http://repo.zabbix.com/zabbix/4.4/debian/pool/main/z/zabbix-release/zabbix-release_4.4-1%2Bbuster_all.deb"
 
-__zabbix_repo_version: "4.2"
+__zabbix_repo_version: "4.4"
 
-__zabbix_repo_releases: ["4.0", "4.2"]
+__zabbix_repo_releases: ["4.0", "4.2", "4.4"]
