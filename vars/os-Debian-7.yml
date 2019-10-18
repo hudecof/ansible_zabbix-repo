@@ -10,3 +10,5 @@ __zabbix_repo_packages:
 __zabbix_repo_version: "3.4"
 
 __zabbix_repo_releases: ["2.2", "2.4", "3.0", "3.2", "3.4"]
+
+__zabbix_repo_supported: true

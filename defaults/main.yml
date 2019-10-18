@@ -4,6 +4,7 @@
 zabbix_repo_version: "{{ __zabbix_repo_version }}"
 zabbix_repo_releases: "{{ __zabbix_repo_releases }}"
 zabbix_repo_packages: "{{ __zabbix_repo_packages }}"
+zabbix_repo_supported: "{{ __zabbix_repo_supported }}"
 
 zabbix_repo_tmp_dir: /tmp
 zabbix_repo_cache_dir: /tmp

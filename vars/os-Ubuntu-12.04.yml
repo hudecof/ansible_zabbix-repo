@@ -4,3 +4,5 @@ __zabbix_repo_packages:
 
 __zabbix_repo_version: "2.2"
 __zabbix_repo_releases: ["2.2"]
+
+__zabbix_repo_supported: true

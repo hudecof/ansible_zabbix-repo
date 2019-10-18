@@ -22,6 +22,7 @@
     - zabbix-repo:version
     - zabbix-repo:download
     - zabbix-repo:packages
+  when: zabbix_repo_supported
 
 - name: include download package tasks
   include: common-download.yml
@@ -29,16 +30,18 @@
     - zabbix-repo
     - zabbix-repo:version
     - zabbix-repo:download
-
+  when: zabbix_repo_supported
 
 - name: include packages common tasks
   include: packages-common.yml
   tags:
     - zabbix-repo
     - zabbix-repo:packages
+  when: zabbix_repo_supported
 
 - name: include packages os tasks
   include: packages-{{ ansible_os_family }}.yml
   tags:
     - zabbix-repo
     - zabbix-repo:packages
+  when: zabbix_repo_supported

@@ -8,3 +8,5 @@ __zabbix_repo_packages:
 __zabbix_repo_version: "4.4"
 
 __zabbix_repo_releases: ["3.4", "4.0", "4.2", "4.4"]
+
+__zabbix_repo_supported: true
