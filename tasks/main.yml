@@ -10,10 +10,7 @@
     - "os-{{ ansible_distribution }}.yml"
     - "os-default.yml"
   tags:
-    - zabbix-repo
-    - zabbix-repo:version
-    - zabbix-repo:download
-    - zabbix-repo:packages
+    - always
 
 - name: include version set tasks
   include: common-version.yml
