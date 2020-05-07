@@ -1,0 +1,9 @@
+---
+__zabbix_repo_packages:
+  "4.4": http://repo.zabbix.com/zabbix/4.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_4.4-1%2Bfocal_all.deb
+
+__zabbix_repo_version: "4.4"
+
+__zabbix_repo_releases: ["4.4"]
+
+__zabbix_repo_supported: true
