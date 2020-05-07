@@ -3,15 +3,12 @@ dependency:
   name: galaxy
 driver:
   name: docker
-lint:
-  name: yamllint
-  options:
-    config-file: molecule/default/yaml-lint.yml
+lint: yamllint -c molecule/default/yaml-lint.yml .
 platforms:
   - name: debian-10
     image: debian:10
-  - name: ubuntu-18.04
-    image: ubuntu:18.04
+  - name: ubuntu-20.04
+    image: ubuntu:20.04
   - name: centos-8
     image: centos:8
 provisioner:
@@ -20,11 +17,9 @@ provisioner:
     create: ../default/create.yml
     destroy: ../default/destroy.yml
     converge: playbook.yml
-  lint:
-    name: ansible-lint
+  lint: ansible-lint
 scenario:
   name: github
 verifier:
   name: testinfra
-  lint:
-    name: flake8
+  lint: flake8
