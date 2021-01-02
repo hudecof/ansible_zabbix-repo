@@ -14,7 +14,7 @@ install:
   - pip install 'molecule[docker]'
 
 script:
-  - molecule test --scenario-name github --debug
+  - molecule --debug test --scenario-name github
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
