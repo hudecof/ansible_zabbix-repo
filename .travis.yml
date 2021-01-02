@@ -11,8 +11,7 @@ before_install:
 
 install:
   - pip install ansible
-  - pip install docker
-  - pip install molecule
+  - pip install 'molecule[docker]'
 
 script:
   - molecule test --scenario-name github
