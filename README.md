@@ -32,7 +32,7 @@ None
 
     - hosts: all
       roles:
-         - hudecof.zabbix-repo
+         - hudecof.zabbix_repo
 
 ## License
 

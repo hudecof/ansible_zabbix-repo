@@ -11,10 +11,10 @@ before_install:
 
 install:
   - pip install ansible
-  - pip install 'molecule[docker]'
+  - pip install 'molecule[docker,lint,ansible]'
 
 script:
-  - molecule --debug test --scenario-name github
+  - molecule test --scenario-name github
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
