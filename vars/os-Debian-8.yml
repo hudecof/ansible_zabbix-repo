@@ -9,9 +9,11 @@ __zabbix_repo_packages:
   "3.2": http://repo.zabbix.com/zabbix/3.2/debian/pool/main/z/zabbix-release/zabbix-release_3.2-1+jessie_all.deb
   "3.0": http://repo.zabbix.com/zabbix/3.0/debian/pool/main/z/zabbix-release/zabbix-release_3.0-1+jessie_all.deb
   "2.4": http://repo.zabbix.com/zabbix/2.4/debian/pool/main/z/zabbix-release/zabbix-release_2.4-1+jessie_all.deb
+  "5.2": http://repo.zabbix.com/zabbix/5.2/debian/pool/main/z/zabbix-release/zabbix-release_5.2-1%2Bdebian8_all.deb
+  "5.4": http://repo.zabbix.com/zabbix/5.4/debian/pool/main/z/zabbix-release/zabbix-release_5.4-1%2Bdebian8_all.deb
 
 __zabbix_repo_version: "5.0"
 
-__zabbix_repo_releases: ["2.4", "3.0", "3.2", "3.4", "4.0", "4.2", "4.4", "5.0"]
+__zabbix_repo_releases: ["2.4", "3.0", "3.2", "3.4", "4.0", "4.2", "4.4", "5.0", "5.2", "5.4"]
 
 __zabbix_repo_supported: true
