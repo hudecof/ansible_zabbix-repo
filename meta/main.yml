@@ -7,33 +7,13 @@ galaxy_info:
   license: BSD
   min_ansible_version: 2.1
   platforms:
-  - name: EL
-    versions:
-    - 5
-    - 6
-    - 7
-    - 8
-  - name: Ubuntu
-    versions:
-    - precise
-    - trusty
-    - xenial
-    - bionic
-    - focal
-    - jammy
-  - name: Debian
-    versions:
-    - squeeze
-    - wheezy
-    - jessie
-    - stretch
-    - buster
-    - bullseye
-  - name: SLES
-    versions:
-    - 12
-    - 15
-  galaxy_tags:
-  - packaging
-  - zabbix
+    - name: EL
+      versions: [5, 6, 7, 8]
+    - name: Ubuntu
+      versions: [precise, trusty, xenial, bionic, focal, jammy]
+    - name: Debian
+      versions: [squeeze, wheezy, jessie, stretch, buster, bullseye]
+    - name: SLES
+      versions: [12, 15]
+  galaxy_tags: [packaging, zabbix]
   dependencies: []
