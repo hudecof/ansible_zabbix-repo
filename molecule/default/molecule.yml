@@ -12,10 +12,10 @@ lint: |
 platforms:
   - name: debian-11
     image: debian:11
-  - name: ubuntu-20.04
-    image: ubuntu:20.04
-  - name: centos-7
-    image: centos:7
+  - name: ubuntu-22.04
+    image: ubuntu:22.04
+  - name: rockylinux-8
+    image: rockylinux:8
 provisioner:
   name: ansible
   options:

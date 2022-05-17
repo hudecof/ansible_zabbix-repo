@@ -10,12 +10,12 @@ lint: |
   ansible-lint
   flake8
 platforms:
-  - name: debian-10
-    image: debian:10
-  - name: ubuntu-20.04
-    image: ubuntu:20.04
-  - name: centos-8
-    image: centos:8
+  - name: debian-11
+    image: debian:11
+  - name: ubuntu-22.04
+    image: ubuntu:22.04
+  - name: rockylinux-8
+    image: rockylinux:8
 provisioner:
   name: ansible
 verifier:

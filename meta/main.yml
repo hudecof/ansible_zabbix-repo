@@ -1,6 +1,7 @@
 ---
 galaxy_info:
-  role_name: zabbix-repo
+  role_name: zabbix_repo
+  namespace: hudecof
   author: Peter Hudec
   description: installing official zabbix repo
   license: BSD
