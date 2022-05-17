@@ -1,6 +1,6 @@
 ---
 - name: "suse | install package"
-  zypper:
+  ansible.builtin.zypper:
     name: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_package_name }}"
     state: present
-    disable_gpg_check: yes
+    disable_gpg_check: true

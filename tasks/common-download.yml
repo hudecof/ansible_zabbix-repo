@@ -1,12 +1,13 @@
 ---
 
 - name: "common | version"
-  debug:
+  ansible.builtin.debug:
     msg: "{{ zabbix_repo_version }} will be installed"
 
 - name: "common | download package"
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ zabbix_repo_packages[zabbix_repo_version] }}"
     dest: "{{ zabbix_repo_cache_dir }}/{{ zabbix_repo_package_name }}"
+    mode: 0664
   delegate_to: localhost
-  become: no
+  become: false
