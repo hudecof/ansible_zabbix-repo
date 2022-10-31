@@ -1,19 +1,40 @@
----
 galaxy_info:
   role_name: zabbix_repo
   namespace: hudecof
   author: Peter Hudec
+  company: 5ok s.r.o.
   description: installing official zabbix repo
   license: BSD
   min_ansible_version: 2.1
   platforms:
     - name: EL
-      versions: [5, 6, 7, 8]
+      versions:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
     - name: Ubuntu
-      versions: [precise, trusty, xenial, bionic, focal, jammy]
+      versions:
+        - precise
+        - trusty
+        - xenial
+        - bionic
+        - focal
+        - jammy
     - name: Debian
-      versions: [squeeze, wheezy, jessie, stretch, buster, bullseye]
+      versions:
+        - squeeze
+        - wheezy
+        - jessie
+        - stretch
+        - buster
+        - bullseye
     - name: SLES
-      versions: [12, 15]
-  galaxy_tags: [packaging, zabbix]
-  dependencies: []
+      versions:
+        - 12
+        - 15
+  galaxy_tags:
+    - packaging
+    - zabbix
+dependencies: []
