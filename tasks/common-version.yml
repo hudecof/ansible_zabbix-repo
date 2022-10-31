@@ -7,4 +7,4 @@
 
 - name: "Common | set package name"
   ansible.builtin.set_fact:
-    zabbix_repo_package_name: "{{ zabbix_repo_packages[zabbix_repo_version]|basename }}"
+    zabbix_repo_package_name: "{{ zabbix_repo_packages[zabbix_repo_version] | basename }}"
