@@ -1,7 +1,7 @@
 ---
 # tasks file for zabbix-repo
 
-- name: "common | set os specific variables"
+- name: "Common | set os specific variables"
   ansible.builtin.include_vars: "{{ item }}"
   with_first_found:
     - "os-{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml"
@@ -12,8 +12,8 @@
   tags:
     - always
 
-- name: include version set tasks
-  include: common-version.yml
+- name: "Include version set tasks"
+  ansible.builtin.include_tasks: common-version.yml
   tags:
     - zabbix-repo
     - zabbix-repo:version
@@ -21,23 +21,23 @@
     - zabbix-repo:packages
   when: zabbix_repo_supported
 
-- name: include download package tasks
-  include: common-download.yml
+- name: "Include download package tasks"
+  ansible.builtin.include_tasks: common-download.yml
   tags:
     - zabbix-repo
     - zabbix-repo:version
     - zabbix-repo:download
   when: zabbix_repo_supported
 
-- name: include packages common tasks
-  include: packages-common.yml
+- name: "Include packages common tasks"
+  ansible.builtin.include_tasks: packages-common.yml
   tags:
     - zabbix-repo
     - zabbix-repo:packages
   when: zabbix_repo_supported
 
-- name: include packages os tasks
-  include: packages-{{ ansible_os_family }}.yml
+- name: "Include packages os tasks"
+  ansible.builtin.include_tasks: packages-{{ ansible_os_family }}.yml
   tags:
     - zabbix-repo
     - zabbix-repo:packages

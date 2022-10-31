@@ -1,10 +1,10 @@
 ---
 
-- name: "common | version"
+- name: "Common | version"
   ansible.builtin.debug:
     msg: "{{ zabbix_repo_version }} will be installed"
 
-- name: "common | download package"
+- name: "Common | download package"
   ansible.builtin.get_url:
     url: "{{ zabbix_repo_packages[zabbix_repo_version] }}"
     dest: "{{ zabbix_repo_cache_dir }}/{{ zabbix_repo_package_name }}"

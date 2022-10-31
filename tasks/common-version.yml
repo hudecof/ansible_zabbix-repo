@@ -1,10 +1,10 @@
 ---
 
-- name: "common | check the version"
+- name: "Common | check the version"
   ansible.builtin.fail:
     msg: version {{ zabbix_repo_version }} is not supported for {{ ansible_distribution }} {{ ansible_distribution_version }}
   when: zabbix_repo_version not in zabbix_repo_releases
 
-- name: "common | set package name"
+- name: "Common | set package name"
   ansible.builtin.set_fact:
     zabbix_repo_package_name: "{{ zabbix_repo_packages[zabbix_repo_version]|basename }}"
