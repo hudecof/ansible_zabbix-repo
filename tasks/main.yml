@@ -13,32 +13,48 @@
     - always
 
 - name: "Include version set tasks"
-  ansible.builtin.include_tasks: common-version.yml
-  tags:
-    - zabbix-repo
-    - zabbix-repo:version
-    - zabbix-repo:download
-    - zabbix-repo:packages
+  ansible.builtin.include_tasks:
+    file: common-version.yml
+    apply:
+      tags:
+        - zabbix-repo
+        - zabbix-repo:version
+        - zabbix-repo:download
+        - zabbix-repo:packages
   when: zabbix_repo_supported
+  tags:
+    - always
 
 - name: "Include download package tasks"
-  ansible.builtin.include_tasks: common-download.yml
-  tags:
-    - zabbix-repo
-    - zabbix-repo:version
-    - zabbix-repo:download
+  ansible.builtin.include_tasks:
+    file: common-download.yml
+    apply:
+      tags:
+        - zabbix-repo
+        - zabbix-repo:version
+        - zabbix-repo:download
   when: zabbix_repo_supported
+  tags:
+    - always
 
 - name: "Include packages common tasks"
-  ansible.builtin.include_tasks: packages-common.yml
-  tags:
-    - zabbix-repo
-    - zabbix-repo:packages
+  ansible.builtin.include_tasks:
+    file: packages-common.yml
+    apply:
+      tags:
+        - zabbix-repo
+        - zabbix-repo:packages
   when: zabbix_repo_supported
+  tags:
+    - always
 
 - name: "Include packages os tasks"
-  ansible.builtin.include_tasks: packages-{{ ansible_os_family }}.yml
-  tags:
-    - zabbix-repo
-    - zabbix-repo:packages
+  ansible.builtin.include_tasks:
+    file: packages-{{ ansible_os_family }}.yml
+    apply:
+      tags:
+        - zabbix-repo
+        - zabbix-repo:packages
   when: zabbix_repo_supported
+  tags:
+    - always
