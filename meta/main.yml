@@ -30,6 +30,7 @@ galaxy_info:
         - stretch
         - buster
         - bullseye
+        - bookworm
     - name: SLES
       versions:
         - 12
