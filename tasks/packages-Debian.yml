@@ -1,7 +1,7 @@
 ---
 - name: "Debian | install package"
   ansible.builtin.apt:
-    deb: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_package_name }}"
+    deb: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_version }}_{{ zabbix_repo_package_name }}"
     dpkg_options: 'force-confnew,force-confdef'
   register: install
 

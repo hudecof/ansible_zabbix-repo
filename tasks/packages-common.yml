@@ -1,8 +1,8 @@
 ---
 - name: "Common | copy package"
   ansible.builtin.copy:
-    src: "{{ zabbix_repo_cache_dir }}/{{ zabbix_repo_package_name }}"
-    dest: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_package_name }}"
+    src: "{{ zabbix_repo_cache_dir }}/{{ zabbix_repo_version }}_{{ zabbix_repo_package_name }}"
+    dest: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_version_}}_{{ zabbix_repo_package_name }}"
     owner: root
     group: root
     mode: 0644
