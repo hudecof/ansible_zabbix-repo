@@ -1,6 +1,6 @@
 ---
 - name: "Redhat | install package"
   ansible.builtin.yum:
-    name: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_version }}_{{ zabbix_repo_package_name }}"
+    name: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_package_name }}"
     state: present
     disable_gpg_check: true

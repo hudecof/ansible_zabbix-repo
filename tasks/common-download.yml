@@ -7,7 +7,7 @@
 - name: "Common | download package"
   ansible.builtin.get_url:
     url: "{{ zabbix_repo_packages[zabbix_repo_version] }}"
-    dest: "{{ zabbix_repo_cache_dir }}/{{ zabbix_repo_version }}_{{ zabbix_repo_package_name }}"
+    dest: "{{ zabbix_repo_cache_dir }}/{{ ansible_distribution }}_{{ zabbix_repo_version }}_{{ zabbix_repo_package_name }}"
     mode: 0664
   delegate_to: localhost
   become: false

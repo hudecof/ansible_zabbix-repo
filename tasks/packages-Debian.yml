@@ -1,12 +1,12 @@
 ---
 - name: "Debian | install package"
   ansible.builtin.apt:
-    deb: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_version }}_{{ zabbix_repo_package_name }}"
-    dpkg_options: 'force-confnew,force-confdef'
+    deb: "{{ zabbix_repo_tmp_dir }}/{{ zabbix_repo_package_name }}"
+    state: present
   register: install
 
 - name: "Debian | update package cache"
   ansible.builtin.apt:
     update_cache: true
     cache_valid_time: 0
-  when: install is changed # noqa no-handler
+  when: install.changed # noqa no-handler
