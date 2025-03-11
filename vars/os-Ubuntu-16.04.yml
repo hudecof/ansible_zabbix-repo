@@ -13,8 +13,9 @@ __zabbix_repo_packages:
   "6.2": http://repo.zabbix.com/zabbix/6.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.2-4%2Bubuntu16.04_all.deb
   "6.4": http://repo.zabbix.com/zabbix/6.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu16.04_all.deb
   "7.0": http://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest%2Bubuntu16.04_all.deb
-
-__zabbix_repo_version: "6.0"
-__zabbix_repo_releases: ["3.0", "3.2", "3.4", "4.0", "4.2", "4.4", "5.0", "5.2", "5.4", "6.0", "6.2", "6.4"]
+  "7.2": https://repo.zabbix.com/zabbix/7.2/release/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.2+ubuntu16.04_all.deb
+  
+__zabbix_repo_version: "7.0"
+__zabbix_repo_releases: ["3.0", "3.2", "3.4", "4.0", "4.2", "4.4", "5.0", "5.2", "5.4", "6.0", "6.2", "6.4", "7.0", "7.2"]
 
 __zabbix_repo_supported: true

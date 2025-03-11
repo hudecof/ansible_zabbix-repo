@@ -11,9 +11,10 @@ __zabbix_repo_packages:
   "6.2": http://repo.zabbix.com/zabbix/6.2/debian/pool/main/z/zabbix-release/zabbix-release_latest%2Bdebian10_all.deb
   "6.4": http://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_latest%2Bdebian10_all.deb
   "7.0": http://repo.zabbix.com/zabbix/7.0/debian/pool/main/z/zabbix-release/zabbix-release_latest%2Bdebian10_all.deb
+  "7.2": https://repo.zabbix.com/zabbix/7.2/release/debian/pool/main/z/zabbix-release/zabbix-release_latest%2Bdebian10_all.deb
 
 __zabbix_repo_version: "7.0"
 
-__zabbix_repo_releases: ["4.0", "4.2", "4.4", "5.0", "5.2", "5.4", "6.0", "6.2", "6.4", "7.0"]
+__zabbix_repo_releases: ["4.0", "4.2", "4.4", "5.0", "5.2", "5.4", "6.0", "6.2", "6.4", "7.0", "7.2"]
 
 __zabbix_repo_supported: true
